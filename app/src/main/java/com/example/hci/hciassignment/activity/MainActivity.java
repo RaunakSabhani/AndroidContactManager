@@ -1,17 +1,24 @@
-package com.example.hci.hciassignment;
+package com.example.hci.hciassignment.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
+
+import com.example.hci.hciassignment.R;
 
 public class MainActivity extends AppCompatActivity {
 
+    ListView contactsListView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        contactsListView = (ListView) findViewById(R.id.listViewContacts);
+        contactsListView.setEmptyView(findViewById(R.id.txtNoContactsFound));
     }
 
     @Override
