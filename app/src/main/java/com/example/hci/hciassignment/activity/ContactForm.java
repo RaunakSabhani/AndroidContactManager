@@ -55,7 +55,7 @@ public class ContactForm extends AppCompatActivity {
             {
                 try {
                     String filename = "Contacts";
-                    String path= getBaseContext().getFilesDir().getAbsolutePath()+"/"+ filename;
+                    String path = getBaseContext().getFilesDir().getAbsolutePath()+"/"+ filename;
                     FileOutputStream outputStream;
                     File file = new File(path);
                     if (file.exists())

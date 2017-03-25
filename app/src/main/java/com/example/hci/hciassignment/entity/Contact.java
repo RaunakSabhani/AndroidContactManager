@@ -25,6 +25,14 @@ public class Contact {
         this.birthDate = birthDate;
     }
 
+    public static Contact stringToContact(String strContact) {
+        String[] attrs = strContact.split("\t");
+        if(attrs.length == 5) {
+            return new Contact(attrs[0], attrs[1], attrs[2], attrs[3], attrs[4]);
+        }
+        return null;
+    }
+
     public String getFirstName() {
         return firstName;
     }
