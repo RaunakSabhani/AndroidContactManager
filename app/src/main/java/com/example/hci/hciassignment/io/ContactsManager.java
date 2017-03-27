@@ -19,7 +19,7 @@ public class ContactsManager {
     FileReader reader;
     FileWriter writer;
 
-    public ContactsManager(String filePath, Context context) {
+    public ContactsManager(Context context) {
         this.filePath = context.getFilesDir().getAbsolutePath()+ "/" + fileName;
         mContext = context;
         reader = new FileReader(filePath, fileName, context);
@@ -35,7 +35,7 @@ public class ContactsManager {
         return false;
     }
 
-    public boolean addContacts(List<Contact> contactList) {
+    public Boolean addContacts(List<Contact> contactList) {
         if(writer.openFile()) {
             for(Contact contact : contactList) {
                 writer.writeLine(contact.toString());
