@@ -5,58 +5,61 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.hci.hciassignment.activity.MainActivity">
+    tools:context="com.example.hci.hciassignment.activity.MainActivity"
+    android:padding="@dimen/contact_layout_padding">
 
 
     <EditText
-        android:id="@+id/first_name"
-        android:layout_width="wrap_content"
+        android:id="@+id/editTextFirstName"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="First Name"
-        android:layout_marginTop="40dp" />
+        android:inputType="textPersonName|textCapWords"
+        android:hint="@string/contact_hint_first_name"
+        android:layout_margin="5dp"/>
 
     <EditText
-        android:id="@+id/last_name"
-        android:layout_width="wrap_content"
+        android:id="@+id/editTextLastName"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Last Name"
-        android:layout_marginTop="32dp"/>
+        android:inputType="textPersonName|textCapWords"
+        android:hint="@string/contact_hint_last_name"
+        android:layout_marginTop="32dp"
+        android:layout_margin="5dp"/>
 
     <EditText
-        android:id="@+id/phone_no"
-        android:layout_width="wrap_content"
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Phone No"
-        android:layout_marginTop="32dp" />
+        android:inputType="phone"
+        android:hint="@string/contact_hint_phone_number"
+        android:layout_margin="5dp"/>
 
     <EditText
-        android:id="@+id/email_address"
-        android:layout_width="wrap_content"
+        android:id="@+id/editTextEmailAddress"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Email address"
+        android:hint="@string/contact_hint_email_address"
         android:inputType="textEmailAddress"
-        android:layout_marginTop="32dp"/>
+        android:layout_margin="5dp"/>
 
     <EditText
-        android:id="@+id/birth_date"
-        android:layout_width="wrap_content"
+        android:id="@+id/editTextBirthDate"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Birth Date"
+        android:hint="@string/contact_hint_birth_date"
         android:inputType="date"
-        android:layout_marginTop="32dp" />
+        android:layout_margin="5dp"/>
 
     <Button
-        android:id="@+id/add_contact_button"
+        android:id="@+id/btnOperation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Contact"
-        android:layout_marginTop="32dp"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"/>
+
 </LinearLayout>

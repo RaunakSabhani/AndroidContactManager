@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".activity.MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,9 +18,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.ContactForm"
-            android:label="@string/title_activity_contact_form"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".activity.ContactFormActivity"
+            android:label="@string/title_activity_contact_form_add"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -29,11 +29,7 @@ public class FileWriter {
         if(outputStream != null) return false;
         file = new File(filePath);
         try {
-            if (file.exists()) {
-                outputStream = mContext.openFileOutput(fileName, Context.MODE_APPEND);
-            } else {
-                outputStream = mContext.openFileOutput(fileName, Context.MODE_PRIVATE);
-            }
+            outputStream = mContext.openFileOutput(fileName, Context.MODE_PRIVATE);
         }
         catch (FileNotFoundException e) {
             e.printStackTrace();

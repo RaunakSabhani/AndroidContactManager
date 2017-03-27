@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">Contact Manager</string>
     <string name="add_action">Add</string>
-    <string name="title_activity_contact_form">ContactForm</string>
+    <string name="title_activity_contact_form_add">Create Contact</string>
+    <string name="title_activity_contact_form_details">Contact Details</string>
     <string name="no_contacts_found_message">No Contacts Found</string>
+    <string name="contact_operation_add">Add</string>
+    <string name="contact_operation_update">Update</string>
+    <string name="contact_operation_delete">Delete</string>
+    <string name="contact_hint_birth_date">Birth Date</string>
+    <string name="contact_hint_email_address">Email Address</string>
+    <string name="contact_hint_phone_number">Phone Number</string>
+    <string name="contact_hint_last_name">Last Name</string>
+    <string name="contact_hint_first_name">First Name</string>
+    <string name="delete_action">Delete</string>
 </resources>

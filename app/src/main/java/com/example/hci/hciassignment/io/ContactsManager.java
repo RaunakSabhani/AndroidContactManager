@@ -47,12 +47,13 @@ public class ContactsManager {
     }
 
     public List<Contact> getContacts() {
-        List<Contact> contactList = null;
+        List<Contact> contactList = new ArrayList<>();
         if(reader.openFile()) {
             String line;
-            contactList = new ArrayList<>();
+            Contact contact;
             while ((line = reader.readLine()) != null) {
-                contactList.add(Contact.stringToContact(line));
+                contact = Contact.stringToContact(line);
+                contactList.add(contact);
             }
             reader.closeFile();
         }
